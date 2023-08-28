@@ -1,0 +1,20 @@
+server:
+  port: 3335
+  servlet:
+    context-path: /Ekart
+    
+spring:
+  application:
+    name: ProductMS
+  cloud:
+    consul:
+      config:
+#        enabled: true
+        prefix: config
+        defaultContext: application
+        data-key: data
+        profileSeparator: '::'
+        format: YAML
+      discovery:
+        hostname: localhost
+        health-check-url: http://localhost:${server.port}${server.servlet.context-path}/actuator

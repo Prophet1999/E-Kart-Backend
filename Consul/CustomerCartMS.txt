@@ -1,0 +1,7 @@
+server:
+  port: 3334
+spring:
+  application:
+    name: CustomerCartMS
+  datasource:
+    url: jdbc:mysql://localhost:3306/EKART_CUSTOMERCART?useSSL=false

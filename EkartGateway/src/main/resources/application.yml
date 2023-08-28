@@ -1,0 +1,36 @@
+spring:
+ cloud:
+  gateway:
+    globalcors:
+      corsConfigurations:
+        '[/**]':
+          allowedOrigins: "*"
+          allowedMethods: "*"
+          allowedHeaders: "*"
+    discovery:
+      locator:
+        enabled: true
+    routes:
+    - id: PaymentMS 
+      uri: lb://PaymentMS
+      predicates:
+       - Path=/Ekart/payment-api/**, /Ekart/payment-api/customer/*/card-type/*
+    
+    - id: ProductMS 
+      uri: lb://ProductMS
+      predicates:
+       - Path=/Ekart/product-api/**
+              
+    - id: CustomerCartMS 
+      uri: lb://CustomerCartMS
+      predicates:
+       - Path=/Ekart/customercart-api/**
+       
+    - id: CustomerMS 
+      uri: lb://CustomerMS
+      predicates:
+       - Path=/Ekart/**
+       
+
+         
+    

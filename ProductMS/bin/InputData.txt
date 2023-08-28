@@ -1,0 +1,115 @@
+Valid data for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+    "releaseDate":"2019-09-27",
+	"mentorDTO":{"mentorId":1009}
+}
+
+For Validations:
+Invalid data for allocate project module
+{
+	"projectName":"Android Shopping App",
+    "releaseDate":"2019-09-27",
+	"mentorDTO":{"mentorId":1009}
+}
+
+Invalid data for allocate project module
+{
+	"ideaOwner":10009,
+    "releaseDate":"2019-09-27",
+	"mentorDTO":{"mentorId":1009}
+}
+
+Invalid data for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+	"mentorDTO":{"mentorId":1009}
+}
+
+Invalid data for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+    "releaseDate":"2019-09-27"
+}
+
+Invalid data for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+    "releaseDate":"2019-09-27",
+	"mentorDTO":{}
+}
+
+Invalid data for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+	"releaseDate":"2019-09-27",
+	"mentorDTO":{"mentorId":10090}
+}
+
+Invalid data for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+	"releaseDate":"2019-09-27",
+	"mentorDTO":{"mentorId":100}
+}
+
+For Service Exceptions:
+Invalid data for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+	"releaseDate":"2019-09-27",
+	"mentorDTO":{"mentorId":1002}
+}
+
+Invalid data for allocate project module
+{
+	"ideaOwner":10009,
+	"projectName":"Android Shopping App",
+	"releaseDate":"2019-09-27",
+	"mentorDTO":{"mentorId":1015}
+}
+
+
+---------------------------------------------------
+
+Valid data for get mentor details module
+http://localhost:8765/infyinterns/mentor/1
+
+Invalid data for get project details module
+http://localhost:8765/infyinterns/mentor/4
+---------------------------------------------------
+
+Valid data for update project mentor module
+http://localhost:8765/infyinterns/project/12/1004
+
+For Validations:
+Invalid data for update project mentor module
+http://localhost:8765/infyinterns/project/1/11031
+
+Invalid data for update project mentor module
+http://localhost:8765/infyinterns/project/1/100
+
+For Service Exceptions:
+Invalid data for update project mentor module
+http://localhost:8765/infyinterns/project/1/2000
+
+Invalid data for update project mentor module
+http://localhost:8765/infyinterns/project/1/1002
+
+Invalid data for update project mentor module
+http://localhost:8765/infyinterns/project/15/1004
+----------------------------------------------------
+
+Valid data for delete project module
+http://localhost:8765/infyinterns/project/5
+
+Invalid data for delete project module
+http://localhost:8765/infyinterns/project/17
+----------------------------------------------------

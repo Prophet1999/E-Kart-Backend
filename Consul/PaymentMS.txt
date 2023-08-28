@@ -1,0 +1,7 @@
+server:
+  port: 3337
+spring:
+  application:
+    name: PaymentMS
+  datasource:
+    url: jdbc:mysql://localhost:3306/EKART_PAYMENT?useSSL=false
